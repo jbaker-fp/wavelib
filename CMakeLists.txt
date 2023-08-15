@@ -27,10 +27,16 @@ include_directories(
 #--------------------------------------
 add_library(wavelib OBJECT 
     src/conv.c
+    src/conv.h
     src/hsfft.c
+    src/hsfft.h
     src/real.c
+    src/real.h
     src/wavefilt.c
+    src/wavefilt.h
     src/wavelib.c
     src/wtmath.c
+    src/wtmath.h
 )
+target_include_directories(wavelib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_compile_options(wavelib PRIVATE -O3 -fPIC)
