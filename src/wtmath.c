@@ -223,6 +223,7 @@ void idwt_per_stride(double *cA, int len_cA, double *cD, double *lpr, double *hp
 	}
 }
 
+
 void idwt_sym_stride(double *cA, int len_cA, double *cD, double *lpr, double *hpr, int lpr_len, double *X, int istride, int ostride) {
 	int len_avg, i, l, m, n, t, v;
 	int ms, ns, is;
