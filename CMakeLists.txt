@@ -25,7 +25,7 @@ include_directories(
 #--------------------------------------
 # Wavelib Library
 #--------------------------------------
-add_library(wavelib STATIC 
+add_library(wavelib SHARED 
     src/conv.c
     src/conv.h
     src/hsfft.c
